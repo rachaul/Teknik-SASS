@@ -1,0 +1,153 @@
+@import './_colors';
+@import './button';
+@import './font';
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+.navbar-tp {
+    padding-top: 30px;
+    .navbar-nav {
+        li {
+            padding-left: 50px;
+        }
+        .active {
+            color: $purple !important;
+            font-weight: map-get($font-weight, medium) !important;
+        }
+        .nav-link {
+            color: $navy;
+            font-weight: map-get($font-weight, regular);
+        }
+    }
+}
+
+.sales {
+    padding-top: 30px;
+    .copywriting {
+        padding-left: 140px;
+        .header {
+            font-weight: map-get($font-weight, semibold);
+            color: $navy;
+            font-size: 46px;
+            line-height: 60px;
+            margin-top: 100px;
+        }
+        .deskripsi {
+            margin-top: 20px;
+            margin-bottom: 40px;
+            font-weight: map-get($font-weight, regular);
+            color: $newpur;
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+}
+
+.brand {
+    margin-top: 70px;
+    .brand-logo {
+        margin-left: 100px;
+        width: 100px;
+    }
+}
+
+.pricing {
+    background: $lilpur;
+    padding: 70px 0 70px 0;
+    margin-top: 70px;
+    .header {
+        font-weight: map-get($font-weight, semibold);
+        color: $navy;
+        font-size: 46px;
+        line-height: 60px;
+        margin-top: 100px;
+    }
+    .deskripsi {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        font-weight: map-get($font-weight, regular);
+        color: $newpur;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .master-card {
+        padding: 30px;
+        border-radius: 22px;
+        .name {
+            font-size: 18px;
+            font-weight: map-get($font-weight, medium);
+        }
+        .price {
+            font-size: 36px;
+            font-weight: map-get($font-weight, semibold);
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+        .support {
+            font-size: 16px;
+            font-weight: map-get($font-weight, regular);
+            margin-bottom: 40px;
+        }
+        .item-benefit {
+            margin-bottom: 20px;
+            img {
+                float: left;
+                margin-right: 8px;
+            }
+            p {
+                font-size: 16px;
+                font-weight: map-get($font-weight, medium);
+            }
+        }
+        .btn {
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+    .basic-card {
+        @extend .master-card;
+        background: $white;
+        .name {
+            color: $navy;
+        }
+        .price {
+            color: $navy;
+        }
+        .support {
+            color: $newpur;
+        }
+        .item-benefit {
+            p {
+                color: $navy;
+            }
+        }
+    }
+    .most-card {
+        @extend .master-card;
+        background: $purple;
+        .name {
+            color: $white;
+        }
+        .price {
+            color: $white;
+        }
+        .support {
+            color: $supportpur;
+        }
+        .item-benefit {
+            p {
+                color: $white;
+            }
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    color: $white;
+    background-color: $purple;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
